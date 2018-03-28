@@ -1,0 +1,33 @@
+{
+  "name": "bluetoothcycledata",
+  "version": "1.0.0",
+  "description": "A simple to use library that connects to bluetooth cycling sensors, such as power, cadence and speed.",
+  "main": "src/bluetoothDataProvider.js",
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_prod": "webpack --env.NODE_ENV=prod",
+    "build": "webpack --env.NODE_ENV=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sel129/BluetoothCycleData.git"
+  },
+  "author": "Scott Lis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sel129/BluetoothCycleData/issues"
+  },
+  "homepage": "https://github.com/sel129/BluetoothCycleData#readme",
+  "dependencies": {
+    "noble": "^1.9.0",
+    "ws": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  }
+}
